@@ -22,7 +22,6 @@ class scheduler{
 			arrival[i]=sc.nextInt();
 			System.out.println("Enter Burst Time: ");
 			burst[i]=sc.nextInt();
-			//p_list[i].flag = 0;
 			b_t = b_t + burst[i];
 		}
 		for(i=0;i<n-1;i++){
