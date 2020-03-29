@@ -5,7 +5,12 @@ class scheduler{
 		int n,i,j,b_t=0;
 		double avg_waiting=0.0, avg_turnaround=0.0;
 		System.out.println("Enter the no. of processes: ");
-		n=sc.nextInt();
+		do{
+			n=sc.nextInt();
+			if(n<0){
+				System.out.println("Try Again");
+			}
+		}while(n<0);
 		int no[]=new int[n];
 		int arrival[]=new int[n];
 		int burst[]=new int[n];
